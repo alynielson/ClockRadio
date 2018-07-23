@@ -11,13 +11,18 @@ namespace ClockRadio
         //member variables
         public string menuOption;
         public DateTime currentUTCTime;
-        public string currentAlarmState = "OFF";
-        public string currentRadioStation = "95.5 FM";
+        public string currentAlarmState;
+        public string currentRadioStation;
         public string alarmDateTime;
-        public string currentRadioState = "OFF";
+        public string currentRadioState;
 
         //constructor
-
+        public ClockRadio()
+        {
+            currentAlarmState = "OFF";
+            currentRadioStation = "95.5 FM";
+            currentRadioState = "OFF";
+    }
 
         //member methods
         public void GetCurrentCentralTime()
