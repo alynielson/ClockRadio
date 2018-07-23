@@ -10,6 +10,8 @@ namespace ClockRadio
     {
         static void Main(string[] args)
         {
+            ClockRadio clockRadio = new ClockRadio();
+            clockRadio.switchAlarmStatus();
         }
     }
 }
