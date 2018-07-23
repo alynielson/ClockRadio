@@ -26,7 +26,6 @@ namespace ClockRadio
             TimeZoneInfo cstZone = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time");
             DateTime cstTime = TimeZoneInfo.ConvertTimeFromUtc(currentUTCTime, cstZone);
             Console.WriteLine(cstTime);
-            Console.ReadLine();
         }
 
         public void CheckIfAlarmOn()
@@ -43,7 +42,6 @@ namespace ClockRadio
             {
                 Console.WriteLine("The alarm is " + currentAlarmState + " and is set to " + alarmDateTime + ".");
             }
-            Console.ReadLine();
         }
         public void SwitchAlarmStatus()
         {
@@ -59,8 +57,6 @@ namespace ClockRadio
                 currentAlarmState = "OFF";
                 Console.WriteLine("Your alarm is now " + currentAlarmState + ".");
             }
-            
-            Console.ReadLine();
         }
 
         public void SetRadioStation()
@@ -68,13 +64,11 @@ namespace ClockRadio
             Console.WriteLine("What station would you like to set your radio to?");
             currentRadioStation = Console.ReadLine();
             Console.WriteLine("Station changed to " + currentRadioStation + ".");
-            Console.ReadLine();
         }
 
         public void GetCurrentStation()
         {
             Console.WriteLine("The radio is set to " + currentRadioStation + ".");
-            Console.ReadLine();
         }
 
         public void SwitchRadioStatus()
@@ -89,7 +83,6 @@ namespace ClockRadio
                 currentRadioState = "OFF";
                 Console.WriteLine("Radio is now " + currentRadioState + ".");
             }
-            Console.ReadLine();
         }
         
         public void ChooseMenuOption()
